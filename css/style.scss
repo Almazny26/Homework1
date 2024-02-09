@@ -61,10 +61,12 @@ a{
 
 .games{
     background: rgb(0, 9, 21); 
+    height: 556px;
+    display: flex;
+    align-items: center;
 }
 .box{
-    padding-top: 128px;
-    padding-bottom: 128px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -91,7 +93,6 @@ a{
         position: absolute;
         bottom: 32px;
         left: 32px;
-        font-size: 18px;
     }
 
 }
