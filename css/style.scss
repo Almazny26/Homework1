@@ -9,8 +9,10 @@ body{
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
-a{
+a {
     text-decoration: none;
+    &:hover{
+    }
 }
 
 .header {
@@ -56,6 +58,10 @@ a{
         width: 234px;
         height: 48px;
         margin-top: 44px;
+        border: none;
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 
@@ -74,6 +80,15 @@ a{
 
     &__1{
         position: relative;
+        width: 379px;
+        height: 300px;
+        &:hover{
+            box-sizing: border-box;
+            border: 3px solid rgb(68, 210, 255);
+            border-radius: 16px;
+            background: linear-gradient(180.00deg, rgba(39, 1, 15, 0),rgb(0, 25, 68) 100%);
+            cursor: pointer;
+        }
     }
 
     &__img{
@@ -93,6 +108,11 @@ a{
         position: absolute;
         bottom: 32px;
         left: 32px;
+        transition: all 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
 }
