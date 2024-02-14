@@ -1,10 +1,10 @@
 
 
-// // 1 task
-// let a = 10;
-// alert(a);
-// a = 20;
-// alert(a);
+// 1 task
+let a = 10;
+alert(a);
+a = 20;
+alert(a);
 
 // 2 task
 const yearFirstIPhone = 2007;
@@ -62,3 +62,7 @@ delete user[`city of residence`];
 //9.4 task
 let info = prompt("Какую информацию хотите узнать о пользователе?");
 alert(user[info]);
+
+// 10 task
+let username = prompt(`Введите ваше имя: `);
+alert(`Привет, ${username}!`);
