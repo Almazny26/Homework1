@@ -18,3 +18,8 @@ alert(`Создателя JavaScript зовут ${name}.`);
 let x = 10;
 let y = 2;
 alert(`Сумма: ${x + y}, Разность: ${x - y}, Произведение: ${x * y}, Частное: ${x / 2}`);
+
+// 5 task
+let result = Number;
+result = 2 ** 5;
+alert(result);
