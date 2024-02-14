@@ -42,3 +42,23 @@ alert(num);
 // 8 task
 let age = Number(prompt("Сколько вам лет?"));
 alert(age);
+
+// 9.0 task
+let user = {
+    name: 'Dmitry',
+    age: 26,
+    isAdmin: true
+};
+
+// 9.1 task
+user[`city of residence`] = "Stavropol";
+
+// 9.2 task
+user.age = 30;
+
+// 9.3 task
+delete user[`city of residence`];
+
+//9.4 task
+let info = prompt("Какую информацию хотите узнать о пользователе?");
+alert(user[info]);
