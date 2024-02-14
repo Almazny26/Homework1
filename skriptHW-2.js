@@ -38,3 +38,7 @@ num /= 3;
 num ++;
 num --;
 alert(num);
+
+// 8 task
+let age = Number(prompt("Сколько вам лет?"));
+alert(age);
