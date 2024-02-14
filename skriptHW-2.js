@@ -1,10 +1,10 @@
 
 
-// 1 task
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+// // 1 task
+// let a = 10;
+// alert(a);
+// a = 20;
+// alert(a);
 
 // 2 task
 const yearFirstIPhone = 2007;
@@ -23,3 +23,8 @@ alert(`Сумма: ${x + y}, Разность: ${x - y}, Произведени�
 let result = Number;
 result = 2 ** 5;
 alert(result);
+
+// 6 task
+let a = 9;
+let b = 2;
+alert(`Остаток от деления 9 на 2 = ${a % b}`);
