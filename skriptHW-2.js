@@ -1,10 +1,10 @@
 
 
-// 1 task
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+// // 1 task
+// let a = 10;
+// alert(a);
+// a = 20;
+// alert(a);
 
 // 2 task
 const yearFirstIPhone = 2007;
@@ -21,7 +21,7 @@ alert(`Сумма: ${x + y}, Разность: ${x - y}, Произведени�
 
 // 5 task
 let result = 2 ** 5;
-alert(`2 в 5-й степени равно: ${result} `);
+alert(`2 в 5-й степени равно: ` + result);
 
 // 6 task
 let a = 9;
@@ -34,8 +34,8 @@ num += 5;
 num -= 3;
 num *= 7;
 num /= 3;
-num ++;
-num --;
+num++;
+num--;
 alert(num);
 
 // 8 task
