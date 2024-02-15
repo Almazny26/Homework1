@@ -20,9 +20,8 @@ let y = 2;
 alert(`Сумма: ${x + y}, Разность: ${x - y}, Произведение: ${x * y}, Частное: ${x / 2}`);
 
 // 5 task
-let num = 2;
-num **= 5;
-alert(num);
+let result = 2 ** 5;
+alert(`2 в 5-й степени равно: ${result} `);
 
 // 6 task
 let a = 9;
