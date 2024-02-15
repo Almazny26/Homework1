@@ -93,7 +93,7 @@ a {
 }
 .box__img {
   border-radius: 16px;
-  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%), url(0023);
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0), rgb(0, 25, 68) 100%);
   width: 100%;
   height: auto;
 }
