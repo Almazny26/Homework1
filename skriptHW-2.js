@@ -40,7 +40,7 @@ num --;
 alert(num);
 
 // 8 task
-let age = Number(prompt("Сколько вам лет?"));
+let age = prompt("Сколько вам лет?");
 alert(age);
 
 // 9.0 task
