@@ -1,14 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+
 a {
     text-decoration: none;
 }
@@ -20,6 +23,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     &__title {
         width: 788px;
         color: rgb(255, 255, 255);
@@ -30,6 +34,7 @@ a {
         letter-spacing: 0px;
         text-align: left;
     }
+
     &__text {
         width: 481px;
         color: rgb(255, 255, 255);
@@ -39,7 +44,8 @@ a {
         text-align: left;
         padding-top: 32px;
     }
-    &__button{
+
+    &__button {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -57,45 +63,50 @@ a {
         height: 48px;
         margin-top: 44px;
         border: none;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
         }
     }
 }
 
-.games{
-    background: rgb(0, 9, 21); 
-    height: 556px;
+.games {
+    display: flex;
+    gap: 32px;
+    background: rgb(0, 9, 21);
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.box {
+    position: relative;
+    /* Добавляем позиционирование для контейнера */
     display: flex;
     align-items: center;
-}
-.box{
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 32px; 
-
-    &__1{
+    &__link {
         position: relative;
-        width: 379px;
-        height: 300px;
-        &:hover{
-            box-sizing: border-box;
+        transition: all .33s;
+        border: 3px solid transparent;
+        border-radius: 16px;
+        height: 294px;
+
+        &:hover {
             border: 3px solid rgb(68, 210, 255);
             border-radius: 16px;
-            background: linear-gradient(180.00deg, rgba(39, 1, 15, 0),rgb(0, 25, 68) 100%);
+            transform: scale(1.03);
             cursor: pointer;
         }
     }
 
-    &__img{
+
+    &__img {
         border-radius: 16px;
-        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0),rgb(0, 25, 68) 100%);
         width: 100%;
         height: auto;
     }
-    &__text{
+
+    &__text {
         color: rgb(255, 255, 255);
         font-family: Montserrat;
         font-size: 24px;
@@ -104,8 +115,10 @@ a {
         letter-spacing: 0px;
         text-align: left;
         position: absolute;
-        bottom: 32px;
-        left: 32px;
+        bottom: 10%;
+        /* Изменяем bottom на 10% */
+        left: 10%;
+        /* Изменяем left на 10% */
         transition: all 0.3s;
 
         &:hover {
@@ -115,4 +128,138 @@ a {
 
 }
 
+.joostik_1 {
+    background: rgb(0, 9, 21);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 135px;
+    justify-content: space-between;
+}
 
+.seasons {
+
+    padding-top: 276px;
+    padding-bottom: 288px;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+
+    }
+
+    &__text {
+        width: 481px;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: left;
+        padding-top: 32px;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        border-radius: 30px;
+        background: rgb(156, 3, 50);
+        width: 234px;
+        height: 48px;
+        border: none;
+        margin-top: 32px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+.gamepad_1 {
+    width: 485px;
+    height: 333px;
+    padding-top: 233px;
+    padding-bottom: 233px;
+}
+
+
+.joostik_2 {
+    background: rgb(0, 9, 21);
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    gap: 135px;
+    justify-content: space-between;
+}
+
+.remember {
+    padding-top: 282px;
+    padding-bottom: 458px;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+
+    &__text {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 32px;
+    }
+
+    &__button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        border-radius: 30px;
+        background: rgb(156, 3, 50);
+        width: 234px;
+        height: 48px;
+        border: none;
+        margin-top: 32px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.gamepad_2 {
+    width: 481px;
+    height: 322px;
+    padding-top: 239px;
+    padding-bottom: 239px;
+}
