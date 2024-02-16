@@ -1,4 +1,20 @@
-@charset "UTF-8";
+@keyframes color-change-5x {
+  0% {
+    background: #ea2222;
+  }
+  25% {
+    background: #b22cff;
+  }
+  50% {
+    background: #19dcea;
+  }
+  75% {
+    background: #f5be10;
+  }
+  100% {
+    background: #3bd80d;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -62,9 +78,13 @@ a {
   height: 48px;
   margin-top: 44px;
   border: none;
+  transition: all 0.3s;
 }
 .header__button:hover {
-  cursor: pointer;
+  cursor: url(../img/12.svg) 4 1, pointer;
+  transform: scale(1.1);
+  background: rgb(160, 52, 84);
+  animation: color-change-5x 3s linear infinite alternate both;
 }
 
 .games {
@@ -77,7 +97,6 @@ a {
 
 .box {
   position: relative;
-  /* Добавляем позиционирование для контейнера */
   display: flex;
   align-items: center;
 }
@@ -92,7 +111,7 @@ a {
   border: 3px solid rgb(68, 210, 255);
   border-radius: 16px;
   transform: scale(1.03);
-  cursor: pointer;
+  cursor: url(../img/12.svg) 4 1, pointer;
 }
 .box__img {
   border-radius: 16px;
@@ -109,12 +128,11 @@ a {
   text-align: left;
   position: absolute;
   bottom: 10%;
-  /* Изменяем bottom на 10% */
   left: 10%;
-  /* Изменяем left на 10% */
   transition: all 0.3s;
 }
 .box__text:hover {
+  cursor: url(../img/12.svg) 4 1, pointer;
   transform: scale(1.1);
 }
 
@@ -167,9 +185,13 @@ a {
   height: 48px;
   border: none;
   margin-top: 32px;
+  transition: all 0.3s;
 }
 .seasons__button:hover {
-  cursor: pointer;
+  cursor: url(../img/12.svg) 4 1, pointer;
+  transform: scale(1.1);
+  background: rgb(160, 52, 84);
+  animation: color-change-5x 3s linear infinite alternate both;
 }
 
 .gamepad_1 {
@@ -229,9 +251,13 @@ a {
   height: 48px;
   border: none;
   margin-top: 32px;
+  transition: all 0.3s;
 }
 .remember__button:hover {
-  cursor: pointer;
+  cursor: url(../img/12.svg) 4 1, pointer;
+  transform: scale(1.1);
+  background: rgb(160, 52, 84);
+  animation: color-change-5x 3s linear infinite alternate both;
 }
 
 .gamepad_2 {
@@ -239,4 +265,79 @@ a {
   height: 322px;
   padding-top: 239px;
   padding-bottom: 239px;
+}
+
+.puzzles {
+  background-image: url(../img/lowerbc.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.puzzles__title {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 276px;
+}
+.puzzles__text {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  padding-top: 32px;
+}
+.puzzles__button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
+  width: 234px;
+  height: 48px;
+  border: none;
+  margin-top: 32px;
+  transition: all 0.3s;
+}
+.puzzles__button:hover {
+  cursor: url(../img/12.svg) 4 1, pointer;
+  transform: scale(1.1);
+  background: rgb(160, 52, 84);
+  animation: color-change-5x 3s linear infinite alternate both;
+}
+
+.footer {
+  background: rgb(0, 9, 21);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
