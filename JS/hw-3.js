@@ -108,7 +108,21 @@ switch (monthNumber) {
         break;
 }
 
+// 7 task
 
+let userInput = prompt("Пожалуйста, введите любое число");
+
+if (!isNaN(userInput)) {
+    let number = parseFloat(userInput);
+    
+    if (number % 2 === 0) {
+        alert("Число четное");
+    } else {
+        alert("Число нечетное");
+    }
+} else {
+    alert("Вы ввели не число!");
+}
 
 
 

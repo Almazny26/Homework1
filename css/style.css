@@ -33,311 +33,420 @@ a {
   text-decoration: none;
 }
 
-.header {
-  padding-top: 217px;
+.top {
   height: 1024px;
   background-image: url(../img/Rectangle\ 1.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
-.header__title {
-  width: 788px;
+.top__text {
+  padding-top: 217px;
+}
+.top__text-heading {
+  width: 750px;
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 64px;
   font-weight: 700;
   line-height: 78px;
   letter-spacing: 0px;
   text-align: left;
 }
-.header__text {
-  width: 481px;
+.top__text-paragraf {
+  width: 500px;
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 300;
   line-height: 32px;
+  letter-spacing: 0px;
   text-align: left;
   padding-top: 32px;
 }
-.header__button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+.top__text-button {
+  margin-top: 44px;
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
-  text-align: left;
-  border-radius: 30px;
-  background: rgb(156, 3, 50);
-  width: 234px;
-  height: 48px;
-  margin-top: 44px;
+  text-align: center;
+  transition: all 0.33s;
+  font-family: "Montserrat", sans-serif;
   border: none;
-  transition: all 0.3s;
 }
-.header__button:hover {
+.top__text-button:hover {
   cursor: url(../img/12.svg) 4 1, pointer;
   transform: scale(1.1);
-  background: rgb(160, 52, 84);
   animation: color-change-5x 3s linear infinite alternate both;
 }
 
-.games {
+.cards {
   display: flex;
   gap: 32px;
-  background: rgb(0, 9, 21);
+  height: 550px;
+  background-color: rgb(0, 9, 21);
   padding-top: 128px;
   padding-bottom: 128px;
 }
-
-.box {
-  position: relative;
+.cards__play {
+  height: 306px;
   display: flex;
-  align-items: center;
 }
-.box__link {
+.cards__play-link {
   position: relative;
   transition: all 0.33s;
   border: 3px solid transparent;
   border-radius: 16px;
-  height: 294px;
 }
-.box__link:hover {
+.cards__play-link:hover {
   border: 3px solid rgb(68, 210, 255);
   border-radius: 16px;
   transform: scale(1.03);
   cursor: url(../img/12.svg) 4 1, pointer;
 }
-.box__img {
+.cards__play-link img {
   border-radius: 16px;
-  width: 100%;
-  height: auto;
 }
-.box__text {
+.cards__play-text {
+  position: absolute;
+  left: 32px;
+  bottom: 32px;
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 24px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0px;
-  text-align: left;
-  position: absolute;
-  bottom: 10%;
-  left: 10%;
-  transition: all 0.3s;
-}
-.box__text:hover {
-  cursor: url(../img/12.svg) 4 1, pointer;
-  transform: scale(1.1);
-}
-
-.joostik_1 {
-  background: rgb(0, 9, 21);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 135px;
-  justify-content: space-between;
 }
 
 .seasons {
-  padding-top: 276px;
-  padding-bottom: 288px;
+  height: 800px;
+  background-color: rgb(0, 9, 21);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  -moz-column-gap: 135px;
+       column-gap: 135px;
 }
-.seasons__title {
+.seasons__text {
+  grid-column: span 1;
+  padding-top: 282px;
+  width: 584px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+.seasons__text-heading {
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
   letter-spacing: 0px;
   text-align: left;
 }
-.seasons__text {
-  width: 481px;
+.seasons__text-paragraf {
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 18px;
+  font-weight: 300;
   line-height: 32px;
+  letter-spacing: 0px;
   text-align: left;
-  padding-top: 32px;
 }
-.seasons__button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+.seasons__text-button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
-  text-align: left;
-  border-radius: 30px;
-  background: rgb(156, 3, 50);
-  width: 234px;
-  height: 48px;
+  text-align: center;
   border: none;
-  margin-top: 32px;
-  transition: all 0.3s;
+  transition: all 0.33s;
 }
-.seasons__button:hover {
+.seasons__text-button:hover {
   cursor: url(../img/12.svg) 4 1, pointer;
   transform: scale(1.1);
-  background: rgb(160, 52, 84);
   animation: color-change-5x 3s linear infinite alternate both;
 }
-
-.gamepad_1 {
+.seasons__img {
+  grid-column: span 1;
+  padding-top: 233px;
+}
+.seasons__img-img {
   width: 485px;
   height: 333px;
-  padding-top: 233px;
-  padding-bottom: 233px;
-}
-
-.joostik_2 {
-  background: rgb(0, 9, 21);
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  gap: 135px;
-  justify-content: space-between;
 }
 
 .remember {
-  padding-top: 282px;
-  padding-bottom: 458px;
+  height: 800px;
+  background-color: rgb(0, 9, 21);
+  display: flex;
+  flex-direction: row-reverse;
+  -moz-column-gap: 135px;
+       column-gap: 135px;
 }
-.remember__title {
+.remember__img {
+  margin-top: 239px;
+  margin-bottom: 239px;
+}
+.remember__img-img {
+  width: 481px;
+  height: 322px;
+}
+.remember__text {
+  margin-top: 282px;
+  margin-bottom: 282px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.remember__text-heading {
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
   letter-spacing: 0px;
   text-align: left;
 }
-.remember__text {
+.remember__text-paragraf {
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 0px;
   text-align: left;
-  padding-top: 32px;
 }
-.remember__button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+.remember__text-button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
-  text-align: left;
-  border-radius: 30px;
-  background: rgb(156, 3, 50);
-  width: 234px;
-  height: 48px;
+  text-align: center;
   border: none;
-  margin-top: 32px;
-  transition: all 0.3s;
+  transition: all 0.33s;
 }
-.remember__button:hover {
+.remember__text-button:hover {
   cursor: url(../img/12.svg) 4 1, pointer;
   transform: scale(1.1);
-  background: rgb(160, 52, 84);
   animation: color-change-5x 3s linear infinite alternate both;
 }
 
-.gamepad_2 {
-  width: 481px;
-  height: 322px;
-  padding-top: 239px;
-  padding-bottom: 239px;
-}
-
-.puzzles {
+.riddles {
+  height: 800px;
   background-image: url(../img/lowerbc.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
 }
-.puzzles__title {
+.riddles__text {
+  display: flex;
+  padding-top: 276px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+.riddles__text-heading {
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 48px;
   font-weight: 700;
   line-height: 59px;
   letter-spacing: 0px;
   text-align: center;
-  padding-top: 276px;
 }
-.puzzles__text {
+.riddles__text-paragraf {
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 300;
   line-height: 32px;
   letter-spacing: 0px;
   text-align: center;
-  padding-top: 32px;
 }
-.puzzles__button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+.riddles__text-button {
+  width: 234px;
+  height: 48px;
+  border-radius: 30px;
+  background: rgb(156, 3, 50);
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0px;
-  text-align: left;
-  border-radius: 30px;
-  background: rgb(156, 3, 50);
-  width: 234px;
-  height: 48px;
+  text-align: center;
+  transition: all 0.33s;
   border: none;
-  margin-top: 32px;
-  transition: all 0.3s;
+  font-family: "Montserrat", sans-serif;
 }
-.puzzles__button:hover {
+.riddles__text-button:hover {
   cursor: url(../img/12.svg) 4 1, pointer;
   transform: scale(1.1);
-  background: rgb(160, 52, 84);
   animation: color-change-5x 3s linear infinite alternate both;
 }
 
 .footer {
-  background: rgb(0, 9, 21);
   height: 80px;
+  background: rgb(0, 9, 21);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer__text {
   color: rgb(255, 255, 255);
-  font-family: Montserrat;
   font-size: 12px;
   font-weight: 400;
   line-height: 15px;
   letter-spacing: 0px;
-  text-align: left;
+}
+
+@media (max-width: 426px) {
+  .center {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .top {
+    height: 735px;
+    background-image: url(../img/upmob.jpeg);
+  }
+  .top__text {
+    padding-top: 238px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .top__text-heading {
+    width: 100%;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .top__text-paragraf {
+    width: 100%;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .top__text-button {
+    margin-top: 32px;
+    box-sizing: border-box;
+  }
+  .cards {
+    height: 1221px;
+    flex-wrap: wrap;
+  }
+  .cards__play {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .cards__play-img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .cards__play-link img {
+    max-width: 100%;
+    height: 100%;
+  }
+  .seasons {
+    height: 653px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+  .seasons__text {
+    padding-top: 51px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 32px;
+    justify-content: center;
+  }
+  .seasons__text-heading {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .seasons__text-paragraf {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .seasons__img {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 85px;
+  }
+  .seasons__img-svg {
+    width: 100%;
+    height: auto;
+  }
+  .remember {
+    height: 653px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+  .remember__text {
+    margin-top: 51px;
+    margin-bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    align-items: center;
+  }
+  .remember__text-heading {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .remember__text-paragraf {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .remember__img {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 90px;
+  }
+  .remember__img-svg {
+    width: 100%;
+    height: auto;
+  }
+  .riddles {
+    background-image: url(../img/downmob.jpeg);
+  }
+  .riddles__text {
+    padding-top: 51px;
+  }
+  .riddles__text-heading {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .riddles__text-paragraf {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 376px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
