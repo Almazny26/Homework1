@@ -126,17 +126,17 @@ if (!isNaN(userInput)) {
 
 
 
-// // 8 task
+// 8 task
 
-// let clientOS = 0;
+let clientOS = 0;
 
-// if (clientOS === 0) {
-//     console.log("Установите версию приложения для iOS по ссылке");
-// } else if (clientOS === 1) {
-//     console.log("Установите версию приложения для Android по ссылке");
-// } else {
-//     console.log("Неизвестная операционная система");
-// }
+if (clientOS === 0) {
+    console.log("Установите версию приложения для iOS по ссылке");
+} else if (clientOS === 1) {
+    console.log("Установите версию приложения для Android по ссылке");
+} else {
+    console.log("Неизвестная операционная система");
+}
 
 
 
