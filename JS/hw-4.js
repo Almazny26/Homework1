@@ -1,9 +1,11 @@
-// 1 task
+1 task
 
-console.log("Привет");
-console.log("Привет");
+for (let index = 1; index <= 2; index++) {
+    console.log("Привет");
+    console.log(index);
 
 
+}
 
 
 
@@ -11,13 +13,12 @@ console.log("Привет");
 
 // 2 task
 
-let i = 1;
-
-while (i < 6) {
-    console.log(i);
-    i++;
+for (let index = 1; index < 6; index++) {
+    if (index % 2 == 0){
+        continue
+    }
+    console.log(index);
 }
-
 
 
 
@@ -74,7 +75,7 @@ console.log("Количество итераций:", num);
 
 // 6 task
 
-const firstFriday = 5; // В большинстве стран пятница - 5-й день недели
+const firstFriday = 2; // В большинстве стран пятница - 5-й день недели
 
 for (let day = firstFriday; day <= 31; day += 7) {
     console.log(`Сегодня пятница, ${day}-е число. Необходимо подготовить отчет.`);
