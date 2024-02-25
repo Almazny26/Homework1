@@ -9,5 +9,12 @@ function getSeason() {
         alert('Осень');
     } else if (month == 12 || month == 1 || month == 2) {
         alert('Зима');
+    } else if (month < 1 || month > 12){
+        alert('Ошибка!');
+    } else {
+        alert ('Ошибка!!!');
     }
+        
+    
+
 }
