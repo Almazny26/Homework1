@@ -1,4 +1,4 @@
-@media(max-width: 426px) {
+@media(max-width: 768px) {
 
     .center {
         padding-left: 20px;
@@ -39,6 +39,7 @@
     .cards {
         height: 1221px;
         flex-wrap: wrap;
+        justify-content: center;
 
         &__play {
             margin-top: 0px;
