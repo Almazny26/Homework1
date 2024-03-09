@@ -1,0 +1,169 @@
+@media(max-width: 426px) {
+
+    .center {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .top {
+        height: 735px;
+        background-image: url(../img/upmob.jpeg);
+
+        &__text {
+            padding-top: 238px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-heading {
+                width: 100%;
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &-paragraf {
+                width: 100%;
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+
+            &-button {
+                margin-top: 32px;
+                box-sizing: border-box;
+            }
+        }
+    }
+
+    .cards {
+        height: 1221px;
+        flex-wrap: wrap;
+
+        &__play {
+            margin-top: 0px;
+            margin-bottom: 0px;
+
+            &-img {
+                max-width: 100%;
+                max-height: 100%
+            }
+
+            &-link img {
+                max-width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .seasons {
+        height: 653px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+
+        &__text {
+            padding-top: 51px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            row-gap: 32px;
+            justify-content: center;
+
+            &-heading {
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &-paragraf {
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            padding-top: 0px;
+            padding-bottom: 85px;
+
+            &-svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .remember {
+        height: 653px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 64px;
+
+        &__text {
+            margin-top: 51px;
+            margin-bottom: 0px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 32px;
+            align-items: center;
+
+            &-heading {
+                font-size: 32px;
+                line-height: 39px;
+                text-align: center;
+            }
+
+            &-paragraf {
+                font-size: 14px;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+
+        &__img {
+            width: 100%;
+            margin-top: 0px;
+            margin-bottom: 90px;
+
+            &-svg {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .riddles {
+        background-image: url(../img/downmob.jpeg);
+
+        &__text {
+            padding-top: 51px;
+
+            &-heading {
+                color: rgb(255, 255, 255);
+                font-size: 32px;
+                line-height: 39px;
+            }
+
+            &-paragraf {
+                color: rgb(255, 255, 255);
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 22px;
+                letter-spacing: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media(max-width: 376px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

@@ -1,118 +1,377 @@
-*{
+@-webkit-keyframes color-change-5x {
+    0% {
+        background: #ea2222;
+    }
+
+    25% {
+        background: #b22cff;
+    }
+
+    50% {
+        background: #19dcea;
+    }
+
+    75% {
+        background: #f5be10;
+    }
+
+    100% {
+        background: #3bd80d;
+    }
+}
+
+@keyframes color-change-5x {
+    0% {
+        background: #ea2222;
+    }
+
+    25% {
+        background: #b22cff;
+    }
+
+    50% {
+        background: #19dcea;
+    }
+
+    75% {
+        background: #f5be10;
+    }
+
+    100% {
+        background: #3bd80d;
+    }
+}
+
+
+
+
+
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Montserrat', sans-serif;
 }
+
 .center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
+
 a {
     text-decoration: none;
 }
 
-.header {
-    padding-top: 217px;
+.top {
     height: 1024px;
     background-image: url(../img/Rectangle\ 1.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
-    &__title {
-        width: 788px;
-        color: rgb(255, 255, 255);
-        font-family: Montserrat;
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 78px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
+
     &__text {
-        width: 481px;
-        color: rgb(255, 255, 255);
-        font-family: Montserrat;
-        font-size: 18px;
-        line-height: 32px;
-        text-align: left;
-        padding-top: 32px;
+        padding-top: 217px;
+
+        &-heading {
+            width: 750px;
+            color: rgb(255, 255, 255);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 78px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-paragraf {
+            width: 500px;
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-top: 32px;
+        }
+
+        &-button {
+            margin-top: 44px;
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            transition: all .33s;
+            font-family: 'Montserrat', sans-serif;
+            border: none;
+
+            &:hover {
+                cursor: url(../img/12.svg) 4 1, pointer;
+                transform: scale(1.1);
+                -webkit-animation: color-change-5x 3s linear infinite alternate both;
+                animation: color-change-5x 3s linear infinite alternate both
+            }
+        }
     }
-    &__button{
+}
+
+.cards {
+    display: flex;
+    gap: 32px;
+    height: 556px - 6px;
+    background-color: rgb(0, 9, 21);
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    &__play {
+        height: 300px + 6px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        color: rgb(255, 255, 255);
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 22px;
-        letter-spacing: 0px;
-        text-align: left;
-        border-radius: 30px;
-        background: rgb(156, 3, 50);
-        width: 234px;
-        height: 48px;
-        margin-top: 44px;
-        border: none;
-        &:hover{
-            cursor: pointer;
-        }
-    }
-}
 
-.games{
-    background: rgb(0, 9, 21); 
-    height: 556px;
-    display: flex;
-    align-items: center;
-}
-.box{
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 32px; 
-
-    &__1{
-        position: relative;
-        width: 379px;
-        height: 300px;
-        &:hover{
-            box-sizing: border-box;
-            border: 3px solid rgb(68, 210, 255);
+        &-link {
+            position: relative;
+            transition: all .33s;
+            border: 3px solid transparent;
             border-radius: 16px;
-            background: linear-gradient(180.00deg, rgba(39, 1, 15, 0),rgb(0, 25, 68) 100%);
-            cursor: pointer;
+
+            &:hover {
+                border: 3px solid rgb(68, 210, 255);
+                border-radius: 16px;
+                transform: scale(1.03);
+                cursor: url(../img/12.svg) 4 1, pointer;
+            }
+
+            & img {
+                border-radius: 16px;
+            }
+        }
+
+        &-text {
+            position: absolute;
+            left: 32px;
+            bottom: 32px;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 0px;
+        }
+    }
+}
+
+.seasons {
+    height: 800px;
+    background-color: rgb(0, 9, 21);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 135px;
+
+    &__text {
+        grid-column: span 1;
+        padding-top: 282px;
+        width: 584px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 32px;
+
+        &-heading {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-paragraf {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-button {
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            border: none;
+            transition: all .33s;
+
+            &:hover {
+                cursor: url(../img/12.svg) 4 1, pointer;
+                transform: scale(1.1);
+                -webkit-animation: color-change-5x 3s linear infinite alternate both;
+                animation: color-change-5x 3s linear infinite alternate both
+            }
         }
     }
 
-    &__img{
-        border-radius: 16px;
-        background: linear-gradient(180.00deg, rgba(39, 1, 15, 0),rgb(0, 25, 68) 100%);
-        width: 100%;
-        height: auto;
+    &__img {
+        grid-column: span 1;
+        padding-top: 233px;
+
+        &-img {
+            width: 485px;
+            height: 333px;
+        }
     }
-    &__text{
+}
+
+.remember {
+    height: 800px;
+    background-color: rgb(0, 9, 21);
+    display: flex;
+    flex-direction: row-reverse;
+    column-gap: 135px;
+
+    &__img {
+        margin-top: 239px;
+        margin-bottom: 239px;
+
+        &-img {
+            width: 481px;
+            height: 322px;
+        }
+    }
+
+    &__text {
+        margin-top: 282px;
+        margin-bottom: 282px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+
+        &-heading {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-paragraf {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &-button {
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            border: none;
+            transition: all .33s;
+
+            &:hover {
+                cursor: url(../img/12.svg) 4 1, pointer;
+                transform: scale(1.1);
+                -webkit-animation: color-change-5x 3s linear infinite alternate both;
+                animation: color-change-5x 3s linear infinite alternate both
+            }
+        }
+    }
+}
+
+.riddles {
+    height: 800px;
+    background-image: url(../img/lowerbc.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__text {
+        display: flex;
+        padding-top: 276px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        &-heading {
+            color: rgb(255, 255, 255);
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &-paragraf {
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+
+        &-button {
+            width: 234px;
+            height: 48px;
+            border-radius: 30px;
+            background: rgb(156, 3, 50);
+            color: rgb(255, 255, 255);
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: center;
+            transition: all .33s;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+
+            &:hover {
+                cursor: url(../img/12.svg) 4 1, pointer;
+                transform: scale(1.1);
+                -webkit-animation: color-change-5x 3s linear infinite alternate both;
+                animation: color-change-5x 3s linear infinite alternate both
+            }
+        }
+    }
+}
+
+.footer {
+    height: 80px;
+    background: rgb(0, 9, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__text {
         color: rgb(255, 255, 255);
-        font-family: Montserrat;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 32px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 15px;
         letter-spacing: 0px;
-        text-align: left;
-        position: absolute;
-        bottom: 32px;
-        left: 32px;
-        transition: all 0.3s;
-
-        &:hover {
-            transform: scale(1.1);
-        }
     }
-
 }
 
 
+
+@import '_mobile';
