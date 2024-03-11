@@ -62,3 +62,25 @@ console.log('Минимальное значение:', min);
 // 5 task
 
 console.log(Math.round(Math.random() * 10 + 1));
+
+
+
+
+
+// 6 task
+
+function generateRandomArray(num) {
+    if (typeof num !== 'number' || !Number.isInteger(num) || num <= 0) {
+        return "Введите положительное целое число";
+    }
+    const arrayLength = num / 2;
+    const randomArray = [];
+    for (let i = 0; i < arrayLength; i++) {
+        randomArray.push(Math.floor(Math.random() * num));
+    }
+    return randomArray;
+}
+
+const inputNumber = 22;
+const resultArray = generateRandomArray(inputNumber);
+console.log(resultArray);
