@@ -84,3 +84,25 @@ function generateRandomArray(num) {
 const inputNumber = 22;
 const resultArray = generateRandomArray(inputNumber);
 console.log(resultArray);
+
+
+
+
+
+// 7 task
+
+function getRandomNumberInRange(x, y) {
+    if (!Number.isInteger(x) || !Number.isInteger(y)) {
+        return "Введите целые числа";
+    }
+    if (x > y) {
+        [x, y] = [y, x];
+    }
+    const randomNumber = Math.floor(Math.random() * (y - x + 1)) + x;
+    return randomNumber;
+}
+
+const upshot = getRandomNumberInRange(13, 67);
+console.log(upshot);
+
+
