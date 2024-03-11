@@ -14,7 +14,6 @@ function getSeason() {
     } else {
         alert ('Ошибка!!!');
     }
-        
-    
-
 }
+
+
