@@ -60,3 +60,5 @@ console.log('Минимальное значение:', min);
 
 
 // 5 task
+
+console.log(Math.round(Math.random() * 10 + 1));
