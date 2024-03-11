@@ -127,3 +127,32 @@ let futureDate = currentDate.toLocaleDateString();
 console.log("Дата, которая наступит через 73 дня после текущей:", futureDate);
 
 
+
+
+
+// 10 task
+
+function formatDate(date) {
+    const months = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
+    const weekday = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
+
+    const day = date.getDate();
+    const month = months[date.getMonth()];
+    const year = date.getFullYear();
+    const dayOfWeek = weekday[date.getDay()];
+    const hours = date.getHours().toString().padStart(2, '0');
+    const minutes = date.getMinutes().toString().padStart(2, '0');
+    const seconds = date.getSeconds().toString().padStart(2, '0');
+
+    const dateString = `Дата: ${day} ${month} ${year} — это ${dayOfWeek}.`;
+    const timeString = `Время: ${hours}:${minutes}:${seconds}`;
+
+    return dateString + '\n' + timeString;
+}
+
+const presentDay = new Date();
+const formattedDate = formatDate(presentDay);
+console.log(formattedDate);
+
+
+
