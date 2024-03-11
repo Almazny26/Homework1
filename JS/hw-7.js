@@ -111,7 +111,19 @@ console.log(upshot);
 
 // 8 task
 
+let actualDate = new Date();
+console.log(actualDate);
+
+
+
+
+
+// 9 task
+
 let currentDate = new Date();
-console.log(currentDate);
+currentDate.setDate(currentDate.getDate() + 73);
+let futureDate = currentDate.toLocaleDateString();
+
+console.log("Дата, которая наступит через 73 дня после текущей:", futureDate);
 
 
