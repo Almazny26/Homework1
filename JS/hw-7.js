@@ -106,3 +106,12 @@ const upshot = getRandomNumberInRange(13, 67);
 console.log(upshot);
 
 
+
+
+
+// 8 task
+
+let currentDate = new Date();
+console.log(currentDate);
+
+
