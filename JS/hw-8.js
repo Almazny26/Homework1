@@ -53,16 +53,30 @@
 
 
 
-// 3 task
+// // 3 task
 
-function printCurrentDate() {
-    const currentDate = new Date();
-    console.log(currentDate);
+// function printCurrentDate() {
+//     const currentDate = new Date();
+//     console.log(currentDate);
+// }
+
+// const intervalId = setInterval(printCurrentDate, 3000);
+
+// setTimeout(() => {
+//     clearInterval(intervalId);
+//     console.log("30 секунд прошло");
+// }, 30000);
+
+
+
+
+
+// 4 task
+
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
 }
 
-const intervalId = setInterval(printCurrentDate, 3000);
-
-setTimeout(() => {
-    clearInterval(intervalId);
-    console.log("30 секунд прошло");
-}, 30000);
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+})
